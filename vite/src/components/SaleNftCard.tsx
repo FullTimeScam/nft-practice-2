@@ -13,7 +13,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 import { Contract, formatEther, JsonRpcSigner } from "ethers";
-import { Dispatch, FC, SetStateAction, useEffect, useState } from "react";
+import { FC, useEffect, useState } from "react";
 
 interface SaleNftCardProps {
   nftMetadata: NftMetadata;
