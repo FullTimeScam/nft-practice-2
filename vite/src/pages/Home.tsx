@@ -5,7 +5,7 @@ const Home: FC = () => {
   return (
     <Flex width="100vw" height="100vh">
       <Image
-        src="/public/images/KD_5.png"
+        src="/images/KD_5.png"
         alt="Home Image"
         objectFit="cover"
         width="100%"
