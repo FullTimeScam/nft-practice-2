@@ -26,7 +26,7 @@ contract SaleNft {
     function purchaseNft(uint _tokenId) public payable {
         require(msg.sender != mintNftContract.ownerOf(_tokenId), "Caller is token owner.");
         require(msg.value >= tokenPrice[_tokenId], "Caller sent lower than price.");
-        require(tokenPrice[_tokenId] != 0, "Token is not sale.");
+        require(tokenPrice[_tokenId] != 0, "Token is not on sale.");
 
         payable(mintNftContract.ownerOf(_tokenId)).transfer(msg.value);
         mintNftContract.transferFrom(mintNftContract.ownerOf(_tokenId), msg.sender, _tokenId);
